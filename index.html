@@ -15,11 +15,13 @@
   <main>
     <section class="question-card">
       <button class="bookmark" data-js="bookmarkButton">
-        <img src="./images/whitebookmark.png" alt="bookmark" width="25" height="25" data-js="bookmarkImg" />
+        <img src="./images/whitebookmark.png" alt="bookmark" width="25" height="25" data-js="bookmarkImg"
+          class="bookmarked" />
       </button>
       <p class="question">What is a html ? ?</p>
       <section class="answer">
-        <button class="answer-btn">hide answer</button>
+        <button class="answer-btn" data-js="answer-btn">show answer</button>
+        <p class="answer-text hidden" data-js="answer-text">This is my answer</p>
       </section>
       <section class="tags-list">
         <button class="tag">#HTML</button>
@@ -28,7 +30,7 @@
       </section>
     </section>
     <section class="question-card">
-      <button class="bookmark" data-js="bookmarkButton">
+      <button class="bookmark" data-js="bookmark">
         <img src="./images/bookmark.png" alt="bookmarked" width="25" height="25" data-js="bookmarkSource" />
       </button>
       <p class="question">What is a css ?</p>

@@ -87,3 +87,7 @@ nav a.current {
   height: 80px;
   text-align: center;
 }
+ 
+.hidden {
+  display: none;
+}
