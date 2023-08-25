@@ -1,87 +1,70 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Quiz App</title>
-    <link rel="stylesheet" type="text/css" href="styles.css" />
-  </head>
-  <body>
-    <header>
-      <h1>Quiz App</h1>
-    </header>
-    <main>
-      <section class="question-card">
-        <button class="bookmark">
-          <img
-            src="./images/bookmark.png"
-            alt="bookmark"
-            width="25"
-            height="25"
-          />
-        </button>
-        <p class="question">What is a html ? ?</p>
-        <section class="answer">
-          <button class="answer-btn">hide answer</button>
-        </section>
-        <section class="tags-list">
-          <button class="tag">#HTML</button>
-          <button class="tag">#CSS</button>
-          <button class="tag">#FLEXBOX</button>
-        </section>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quiz App</title>
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+  <script src="./js/index.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <h1>Quiz App</h1>
+  </header>
+  <main>
+    <section class="question-card">
+      <button class="bookmark" data-js="bookmarkButton">
+        <img src="./images/whitebookmark.png" alt="bookmark" width="25" height="25" data-js="bookmarkImg" />
+      </button>
+      <p class="question">What is a html ? ?</p>
+      <section class="answer">
+        <button class="answer-btn">hide answer</button>
       </section>
-      <section class="question-card">
-        <button class="bookmark">
-          <img
-            src="./images/bookmark.png"
-            alt="bookmark"
-            width="25"
-            height="25"
-          />
-        </button>
-        <p class="question">What is a css ?</p>
-        <section class="answer">
-          <button class="answer-btn">show answer</button>
-          <p class="answer-text">This is my answer</p>
-        </section>
-        <section class="tags-list">
-          <button class="tag">#HTML</button>
-          <button class="tag">#CSS</button>
-          <button class="tag">#FLEXBOX</button>
-        </section>
+      <section class="tags-list">
+        <button class="tag">#HTML</button>
+        <button class="tag">#CSS</button>
+        <button class="tag">#FLEXBOX</button>
       </section>
-      <section class="question-card">
-        <button class="bookmark">
-          <img
-            src="./images/bookmark.png"
-            alt="bookmark"
-            width="25"
-            height="25"
-          />
-        </button>
-        <p class="question">What is a Javascript ?</p>
-        <section class="answer">
-          <button class="answer-btn">show answer</button>
-          <p class="answer-text">This is my answer</p>
-        </section>
-        <section class="tags-list">
-          <button class="tag">#HTML</button>
-          <button class="tag">#CSS</button>
-          <button class="tag">#FLEXBOX</button>
-        </section>
+    </section>
+    <section class="question-card">
+      <button class="bookmark" data-js="bookmarkButton">
+        <img src="./images/bookmark.png" alt="bookmarked" width="25" height="25" data-js="bookmarkSource" />
+      </button>
+      <p class="question">What is a css ?</p>
+      <section class="answer">
+        <button class="answer-btn">show answer</button>
+        <p class="answer-text">This is my answer</p>
       </section>
-    </main>
-    <footer>
-      <nav>
-        <a href="" class="link current"
-          ><img src="./images/home.png" alt="Homepage icon"
-        /></a>
-        <a href="bookmarks.html" class="link"
-          ><img src="./images/bookmark.png" alt="Bookmark icon"
-        /></a>
-        <a href="" class="link"
-          ><img src="./images/profile-icon.jpg" alt="Profile icon"
-        /></a>
-      </nav>
-    </footer>
-  </body>
+      <section class="tags-list">
+        <button class="tag">#HTML</button>
+        <button class="tag">#CSS</button>
+        <button class="tag">#FLEXBOX</button>
+      </section>
+    </section>
+    <section class="question-card">
+      <button class="bookmark">
+        <img src="./images/whitebookmark.png" alt="bookmark" width="25" height="25" data-js="bookmarkSource" />
+      </button>
+      <p class="question">What is a Javascript ?</p>
+      <section class="answer">
+        <button class="answer-btn">show answer</button>
+        <p class="answer-text">This is my answer</p>
+      </section>
+      <section class="tags-list">
+        <button class="tag">#HTML</button>
+        <button class="tag">#CSS</button>
+        <button class="tag">#FLEXBOX</button>
+      </section>
+    </section>
+  </main>
+  <footer>
+    <nav>
+      <a href="index.html" class="link current"><img src="./images/home.png" alt="Homepage icon" /></a>
+      <a href="bookmarks.html" class="link"><img src="./images/bookmark.png" alt="Bookmark icon" /></a>
+      <a href="profile.html" class="link"><img src="./images/profile-icon.jpg" alt="Profile icon" /></a>
+    </nav>
+  </footer>
+</body>
+
 </html>

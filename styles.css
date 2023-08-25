@@ -82,3 +82,8 @@ nav a.link {
 nav a.current {
   background-color: var(--color-white);
 }
+.profile-icon img {
+  width: 80px;
+  height: 80px;
+  text-align: center;
+}
