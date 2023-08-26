@@ -29,6 +29,7 @@ main {
   padding: 20px;
   position: relative;
   margin: 20px 0;
+  box-shadow: 2px 2px 2px 2px var(--color-pink);
 }
 
 .bookmark {
@@ -87,7 +88,14 @@ nav a.current {
   height: 80px;
   text-align: center;
 }
- 
+
 .hidden {
   display: none;
+}
+.submit-btn {
+  width: 150px;
+  background-color: var(--color-pink);
+  color: var(--color-white);
+  padding: 10px;
+  border: none;
 }

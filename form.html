@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quiz App</title>
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+  <script src="./js/form.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <h1>Quiz App</h1>
+  </header>
+  <main>
+    <section class="question-card">
+      <form data-js="form">
+        <p><label for="question">Your Question:</label></p>
+        <textarea id="question" name="question"></textarea><br>
+        <p><label for="answer">Your Answer:</label></p>
+        <textarea id="answer" name="answer"></textarea><br>
+        <p><label for="tag">Tag:</label></p>
+        <input type="text" id="tag" name="tag">
+        <input type="submit" value="submit" class="submit-btn">
+      </form>
+    </section>
+  </main>
+  <footer>
+    <nav>
+      <a href="index.html" class="link"><img src="./images/home.png" alt="Homepage icon" /></a>
+      <a href="bookmarks.html" class="link"><img src="./images/bookmark.png" alt="Bookmark icon" /></a>
+      <a href="form.html" class="link current"><img src="./images/plus.png" alt="Form icon"></a>
+      <a href="profile.html" class="link"><img src="./images/profile-icon.jpg" alt="Profile icon" /></a>
+    </nav>
+  </footer>
+</body>
+
+</html>
