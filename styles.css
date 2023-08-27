@@ -99,6 +99,24 @@ nav a.current {
   height: 80px;
 }
 
+.counters img {
+  width: 15px;
+  height: 15px;
+}
+
+.counters {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.counter {
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--color-pink);
+  padding: 5px;
+  border-radius: 10px;
+}
+
 .hidden {
   display: none;
 }
