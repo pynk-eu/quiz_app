@@ -89,10 +89,14 @@ nav a.link {
 nav a.current {
   background-color: var(--color-white);
 }
-.profile-icon img {
+
+.profile-icon {
+  text-align: center;
+}
+
+img {
   width: 80px;
   height: 80px;
-  text-align: center;
 }
 
 .hidden {
