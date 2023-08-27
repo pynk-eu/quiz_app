@@ -28,12 +28,21 @@ form.addEventListener("submit", (event) => {
   document.querySelector("main").append(sectionCardElement);
 });
 
-const textArea = document.querySelector('[data-js="textarea"]');
+const textArea = document.querySelector('[data-js="textArea"]');
+const textArea1 = document.querySelector('[data-js="textArea1"]');
 const remainingChar = document.querySelector('[data-js="remainingChar"]');
-const maxChar = 150;
+const remainingChar1 = document.querySelector('[data-js="remainingChar1"]');
+
+function textRemaining(text, remainingChar) {
+  const maxChar = text.getAttribute("maxlength");
+  const remaining = maxChar - text.value.length;
+  remainingChar.textContent = remaining;
+}
 
 textArea.addEventListener("input", () => {
-  const remaining = maxChar - textArea.value.length;
+  textRemaining(textArea, remainingChar);
+});
 
-  remainingChar.textContent = remaining;
+textArea1.addEventListener("input", () => {
+  textRemaining(textArea1, remainingChar1);
 });

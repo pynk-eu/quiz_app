@@ -16,19 +16,19 @@
     <section class="question-card">
       <form data-js="form" class="form">
         <p><label for="question">Your Question:</label></p>
-        <textarea id="question" name="question" maxlength="150" placeholder="Write your question ?"
-          data-js="textarea"></textarea><br>
+        <textarea id="question" name="question" maxlength="150" placeholder="Write your question ?" rows="3"
+          data-js="textArea"></textarea><br>
         <section class="countingChar">
-          <span data-js="remainingChar">0</span> of 150 characters left
+          <p> <span data-js="remainingChar">150</span> of 150 characters left</p>
         </section>
         <p><label for="answer">Your Answer:</label></p>
-        <textarea id="answer" name="answer" maxlength="150" placeholder="Write your answer."
-          data-js="textarea"></textarea><br>
-        <!-- <section class="countingChar">
-          <span data-js="remainingChar">0</span> of 150 characters left
-        </section> -->
+        <textarea id="answer" name="answer" maxlength="150" placeholder="Write your answer." rows="3"
+          data-js="textArea1"></textarea><br>
+        <section class="countingChar">
+          <p><span data-js="remainingChar1">150</span> of 150 characters left</p>
+        </section>
         <p><label for="tag">Tag:</label></p>
-        <input type="text" id="tag" name="tag" placeholder="Write here">
+        <input type="text" id="tag" name="tag" placeholder="#tag">
         <section class="btn">
           <input type="submit" value="submit" class="submit-btn">
         </section>
