@@ -27,3 +27,13 @@ form.addEventListener("submit", (event) => {
   sectionCardElement.append(buttonElement);
   document.querySelector("main").append(sectionCardElement);
 });
+
+const textArea = document.querySelector('[data-js="textarea"]');
+const remainingChar = document.querySelector('[data-js="remainingChar"]');
+const maxChar = 150;
+
+textArea.addEventListener("input", () => {
+  const remaining = maxChar - textArea.value.length;
+
+  remainingChar.textContent = remaining;
+});

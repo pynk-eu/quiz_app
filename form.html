@@ -14,14 +14,25 @@
   </header>
   <main>
     <section class="question-card">
-      <form data-js="form">
+      <form data-js="form" class="form">
         <p><label for="question">Your Question:</label></p>
-        <textarea id="question" name="question"></textarea><br>
+        <textarea id="question" name="question" maxlength="150" placeholder="Write your question ?"
+          data-js="textarea"></textarea><br>
+        <section class="countingChar">
+          <span data-js="remainingChar">0</span> of 150 characters left
+        </section>
         <p><label for="answer">Your Answer:</label></p>
-        <textarea id="answer" name="answer"></textarea><br>
+        <textarea id="answer" name="answer" maxlength="150" placeholder="Write your answer."
+          data-js="textarea"></textarea><br>
+        <!-- <section class="countingChar">
+          <span data-js="remainingChar">0</span> of 150 characters left
+        </section> -->
         <p><label for="tag">Tag:</label></p>
-        <input type="text" id="tag" name="tag">
-        <input type="submit" value="submit" class="submit-btn">
+        <input type="text" id="tag" name="tag" placeholder="Write here">
+        <section class="btn">
+          <input type="submit" value="submit" class="submit-btn">
+        </section>
+
       </form>
     </section>
   </main>
